@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+       		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        		<meta name="description" content="" />
+        		<meta name="author" content="" />
+        		<title>Contact Form</title>
+        		<!-- Core theme CSS (includes Bootstrap)-->
+        		<link href="../css/styles.css" rel="stylesheet" />
+			<script src="../js/validate.js"></script>
+		</head>
+		<body>
+		<!-- Responsive navbar-->
+       	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            	<div class="container px-5">
+                		<a class="navbar-brand" href="#!">Shock's Storage</a>
+                		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    		<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        		<li class="nav-item"><a class="nav-link active" aria-current="page" href="../html/home.html">Home</a></li>
+                        		<li class="nav-item"><a class="nav-link" href="../html/contact.html">Contact us</a></li>
+                        		<li class="nav-item"><a class="nav-link" href="../html/products.html">Products</a></li>
+                    		</ul>
+                		</div>
+            	</div>
+        	</nav>
+		<div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-5">
+					<h3>Contact Form</h3>
+					<form action="" name="myForm" method="get" onsubmit="return validate();">
+    						<table>
+
+        						<tr>
+           							<td align = "right">First Name</td>
+           							<td><input type="text" id="fname" name="fname"><span id="showError"></span></td>
+       						</tr>
+
+        						<tr>
+         							<td align = "right">Last Name</td>
+         							<td><input type="text" id="lname" name="lname"><span id="showError"></span></td>
+        						</tr>
+
+        						<tr>
+         							<td align = "right">Address</td>
+         							<td><textarea name="addr" id="address" cols="30" rows="5"></textarea><span id="showError"></span></td>
+        						</tr>
+
+        						<tr>
+         							<td align = "right">City</td>
+         							<td><input type="text" id="city" name="cityname"><span id="showError"></span></td>
+        						</tr>
+
+        						<tr>
+         							<td align = "right">State</td>
+         							<td>
+            							<select name="statename" id="state">
+            								<option value = "-1" selected> [Choose Yours]</option>
+										<option value = "1">Alabama</option>
+										<option value = "2">Alaska</option>
+										<option value = "3">Arizona</option>
+										<option value = "4">Arkansas</option>
+										<option value = "5">California</option>
+										<option value = "6">Colorado</option>
+										<option value = "7">Connecticut</option>
+										<option value = "8">Delaware</option>
+										<option value = "9">Alabama</option>
+										<option value = "10">Florida</option>
+										<option value = "11">Georgia</option>
+										<option value = "12">Hawaii</option>
+										<option value = "13">Idaho</option>
+										<option value = "14">Illinois</option>
+										<option value = "15">Indiana</option>
+										<option value = "16">Iowa</option>
+										<option value = "17">Kansas</option>
+										<option value = "18">Kentucky</option>
+										<option value = "19">Louisiana</option>
+										<option value = "20">Maine</option>
+										<option value = "21">Maryland</option>
+										<option value = "22">Massachusetts</option>
+										<option value = "23">Michigan</option>
+										<option value = "24">Minnesota</option>
+										<option value = "25">Mississippi</option>
+										<option value = "26">Missouri</option>
+										<option value = "27">Montana</option>
+										<option value = "28">Nebraska</option>
+										<option value = "29">Nevada</option>
+										<option value = "30">New Hampshire</option>
+										<option value = "31">New Jersey</option>
+										<option value = "32">New Mexico</option>
+										<option value = "33">New York</option>
+										<option value = "34">North Carolina</option>
+										<option value = "35">North Dakota</option>
+										<option value = "36">Ohio</option>
+										<option value = "37">Oklahoma</option>
+										<option value = "38">Oregon</option>
+										<option value = "39">Pennsylvania</option>
+										<option value = "40">Rhode Island</option>
+										<option value = "41">South Carolina</option>
+										<option value = "42">South Dakota</option>
+										<option value = "43">Tennessee</option>
+										<option value = "44">Texas</option>
+										<option value = "45">Utah</option>
+										<option value = "46">Vermont</option>
+										<option value = "47">Virginia</option>
+										<option value = "48">Washington</option>
+										<option value = "49">West Virginia</option>
+										<option value = "50">Wisconsin</option>
+										<option value = "51">Wyoming</option>			
+           								</select>
+            							<span id="showError"></span>
+        			 				</td>
+      						</tr>
+
+     							<tr>
+         							<td align = "right">Zip Code</td>
+         							<td><input type="text" id="zip" name="zipcode"><span id="showError"></span></td>
+      						</tr>
+
+      						<tr>
+         							<td align = "right">Phone Number</td>
+         							<td>
+            							<input type="text" name="phnum" id="phone">
+            							<span id="showError"></span>
+          							</td>
+      						</tr>
+
+      						<tr>
+         							<td align = "right">Email</td>
+         							<td><input type="text" name="emailid" id="email"><span id="showError"></span></td>
+      						</tr>
+
+							<tr>
+								<td align = "right"></td>
+								<td><input type = "submit" value = "Submit" /></td>
+							</tr>
+
+     						</table>
+     					<br>
+   				</form>
+				</div>
+			</div>
+		</div>
+		<footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Ask questions on our Socials: Discord, Instagram, and Facebook @ Shock's Storage&copy;</p></div>
+        	</footer>
+
+		</body>
+	</html>
